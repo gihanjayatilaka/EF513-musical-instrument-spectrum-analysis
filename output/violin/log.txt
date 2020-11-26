@@ -1,0 +1,47 @@
+STARTING LOG....Starting program with arguments Namespace(inputFile='violin.wav', outputDir='violin')
+INPUT FILE: violin.wav
+OUTPUT DIR: violin
+Read file violin.wav with sampling rate = 22050
+DESCRIBING : x
+Size=(58773,) | Min=-1.01 | Max=0.79 | Avg=0.00 | Std=0.29
+DESCRIBING : t
+Size=(58773,) | Min=0.00 | Max=2.67 | Avg=1.33 | Std=0.77
+Saved fig violin/timeSeries.png
+DESCRIBING : fourierComplex
+Size=(58773,) | Min=-2761.71-471.65j | Max=7353.29+721.22j | Avg=-0.01+0.00j | Std=69.13
+DESCRIBING : fourierAmplitude
+Size=(29386,) | Min=0.00 | Max=7388.57 | Avg=6.22 | Std=68.85
+DESCRIBING : fourierFrequency
+Size=(29386,) | Min=0.00 | Max=11024.44 | Avg=5512.22 | Std=3182.59
+Saved fig violin/freqSpectrum.png
+CALLING : findHarmonicPartials([13.51762145 11.46985821 31.762465   ...  0.20509242  0.20508906
+  0.20508534],[0.00000000e+00 3.75172273e-01 7.50344546e-01 ... 1.10236869e+04
+ 1.10240621e+04 1.10244372e+04],10,250)
+findPartials([13.51762145 11.46985821 31.762465   ...  0.20509242  0.20508906
+  0.20508534],[0.00000000e+00 3.75172273e-01 7.50344546e-01 ... 1.10236869e+04
+ 1.10240621e+04 1.10244372e+04],10,250)
+Ssaved plot while removing partials : violin/partial-finding-00.png
+Ssaved plot while removing partials : violin/partial-finding-01.png
+Ssaved plot while removing partials : violin/partial-finding-02.png
+Ssaved plot while removing partials : violin/partial-finding-03.png
+Ssaved plot while removing partials : violin/partial-finding-04.png
+Ssaved plot while removing partials : violin/partial-finding-05.png
+Ssaved plot while removing partials : violin/partial-finding-06.png
+Ssaved plot while removing partials : violin/partial-finding-07.png
+Ssaved plot while removing partials : violin/partial-finding-08.png
+Ssaved plot while removing partials : violin/partial-finding-09.png
+RETURNING: findPartials() == {'freq': array([  49.89791231,  246.11301108,  492.22602215,  737.96386096,
+        984.82721658, 1230.94022766, 1477.80358328, 1723.91659435,
+       1967.77857179, 2216.51778878]), 'amp': array([ 709.94192374, 3561.42366259, 7388.5748108 , 1010.51679332,
+       1404.65014351,  559.02559668, 1447.16835565,  658.62419195,
+        685.10783035,  532.84913162])}
+Calculated errors : [13692.775   1850.7601  3923.8953  7690.818   7551.8477  6815.738 ]RETURNING : findHarmonicPartials() = {'f0': 246.1130110765147, 'fn': array([  49.89791231,  246.11301108,  492.22602215,  737.96386096,
+        984.82721658, 1230.94022766, 1477.80358328, 1723.91659435,
+       1967.77857179, 2216.51778878]), 'An': array([ 709.94192374, 3561.42366259, 7388.5748108 , 1010.51679332,
+       1404.65014351,  559.02559668, 1447.16835565,  658.62419195,
+        685.10783035,  532.84913162])}
+CALLING : refineHarmonicPartials(246.1130110765147,[  49.89791231  246.11301108  492.22602215  737.96386096  984.82721658
+ 1230.94022766 1477.80358328 1723.91659435 1967.77857179 2216.51778878],[ 709.94192374 3561.42366259 7388.5748108  1010.51679332 1404.65014351
+  559.02559668 1447.16835565  658.62419195  685.10783035  532.84913162])
+RETURNING : refineHarmonicPartials() = ans
+Finished running inputs Namespace(inputFile='violin.wav', outputDir='violin')

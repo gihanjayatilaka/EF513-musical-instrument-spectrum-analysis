@@ -1,0 +1,56 @@
+STARTING LOG....Starting program with arguments Namespace(inputFile='guitar.wav', outputDir='guitar')
+INPUT FILE: guitar.wav
+OUTPUT DIR: guitar
+Read file guitar.wav with sampling rate = 22050
+DESCRIBING : x
+Size=(22001,) | Min=-0.81 | Max=0.70 | Avg=-0.00 | Std=0.21
+DESCRIBING : t
+Size=(22001,) | Min=0.00 | Max=1.00 | Avg=0.50 | Std=0.29
+Saved fig guitar/timeSeries.png
+DESCRIBING : fourierComplex
+Size=(22001,) | Min=-996.25+1120.94j | Max=820.57+968.47j | Avg=-0.00-0.00j | Std=31.23
+DESCRIBING : fourierAmplitude
+Size=(11000,) | Min=0.00 | Max=1499.67 | Avg=3.86 | Std=30.99
+DESCRIBING : fourierFrequency
+Size=(11000,) | Min=0.00 | Max=11023.50 | Avg=5511.75 | Std=3182.50
+Saved fig guitar/freqSpectrum.png
+CALLING : findHarmonicPartials([3.75663165 2.60040285 2.64103304 ... 0.12488032 0.12503012 0.12513666],[0.00000000e+00 1.00222717e+00 2.00445434e+00 ... 1.10214922e+04
+ 1.10224944e+04 1.10234967e+04],15,50)
+findPartials([3.75663165 2.60040285 2.64103304 ... 0.12488032 0.12503012 0.12513666],[0.00000000e+00 1.00222717e+00 2.00445434e+00 ... 1.10214922e+04
+ 1.10224944e+04 1.10234967e+04],15,50)
+Ssaved plot while removing partials : guitar/partial-finding-00.png
+Ssaved plot while removing partials : guitar/partial-finding-01.png
+Ssaved plot while removing partials : guitar/partial-finding-02.png
+Ssaved plot while removing partials : guitar/partial-finding-03.png
+Ssaved plot while removing partials : guitar/partial-finding-04.png
+Ssaved plot while removing partials : guitar/partial-finding-05.png
+Ssaved plot while removing partials : guitar/partial-finding-06.png
+Ssaved plot while removing partials : guitar/partial-finding-07.png
+Ssaved plot while removing partials : guitar/partial-finding-08.png
+Ssaved plot while removing partials : guitar/partial-finding-09.png
+Ssaved plot while removing partials : guitar/partial-finding-10.png
+Ssaved plot while removing partials : guitar/partial-finding-11.png
+Ssaved plot while removing partials : guitar/partial-finding-12.png
+Ssaved plot while removing partials : guitar/partial-finding-13.png
+Ssaved plot while removing partials : guitar/partial-finding-14.png
+RETURNING: findPartials() == {'freq': array([ 104.23162584,  184.40979955,  371.82628062,  557.23830735,
+        741.6481069 ,  928.0623608 , 1113.47438753, 1300.8908686 ,
+       1486.30289532, 1673.71937639, 2237.97327394, 2615.81291759,
+       2806.23608018, 2996.65924276, 3580.95768374]), 'amp': array([ 238.56340674, 1499.67341609, 1215.52474892, 1269.35824003,
+         93.65471765,  105.0335888 ,   65.64226902,  127.70554559,
+         65.39792244,  123.68486795,  105.3905421 ,  130.86854557,
+        101.06238149,   66.28837104,   65.70742414])}
+Calculated errors : [2747.2495  315.0134 1952.3053 1754.4569 2364.3394 2076.3958]RETURNING : findHarmonicPartials() = {'f0': 184.4097995545657, 'fn': array([ 104.23162584,  184.40979955,  371.82628062,  557.23830735,
+        741.6481069 ,  928.0623608 , 1113.47438753, 1300.8908686 ,
+       1486.30289532, 1673.71937639, 2237.97327394, 2615.81291759,
+       2806.23608018, 2996.65924276, 3580.95768374]), 'An': array([ 238.56340674, 1499.67341609, 1215.52474892, 1269.35824003,
+         93.65471765,  105.0335888 ,   65.64226902,  127.70554559,
+         65.39792244,  123.68486795,  105.3905421 ,  130.86854557,
+        101.06238149,   66.28837104,   65.70742414])}
+CALLING : refineHarmonicPartials(184.4097995545657,[ 104.23162584  184.40979955  371.82628062  557.23830735  741.6481069
+  928.0623608  1113.47438753 1300.8908686  1486.30289532 1673.71937639
+ 2237.97327394 2615.81291759 2806.23608018 2996.65924276 3580.95768374],[ 238.56340674 1499.67341609 1215.52474892 1269.35824003   93.65471765
+  105.0335888    65.64226902  127.70554559   65.39792244  123.68486795
+  105.3905421   130.86854557  101.06238149   66.28837104   65.70742414])
+RETURNING : refineHarmonicPartials() = ans
+Finished running inputs Namespace(inputFile='guitar.wav', outputDir='guitar')

@@ -1,0 +1,46 @@
+STARTING LOG....Starting program with arguments Namespace(inputFile='flute.mp3', outputDir='flute')
+INPUT FILE: flute.mp3
+OUTPUT DIR: flute
+Read file flute.mp3 with sampling rate = 22050
+DESCRIBING : x
+Size=(101376,) | Min=-0.82 | Max=0.88 | Avg=0.00 | Std=0.39
+DESCRIBING : t
+Size=(101376,) | Min=0.00 | Max=4.60 | Avg=2.30 | Std=1.33
+Saved fig flute/timeSeries.png
+DESCRIBING : fourierComplex
+Size=(101376,) | Min=-5643.78+2133.99j | Max=6691.31+5964.61j | Avg=-0.00-0.00j | Std=123.49
+DESCRIBING : fourierAmplitude
+Size=(50688,) | Min=0.00 | Max=12745.74 | Avg=7.26 | Std=123.27
+DESCRIBING : fourierFrequency
+Size=(50688,) | Min=0.00 | Max=11024.78 | Avg=5512.39 | Std=3182.64
+Saved fig flute/freqSpectrum.png
+CALLING : findHarmonicPartials([0.06304666 0.06010404 0.04544394 ... 0.00088669 0.0015011  0.00201125],[0.00000000e+00 2.17507102e-01 4.35014205e-01 ... 1.10243475e+04
+ 1.10245650e+04 1.10247825e+04],10,250)
+findPartials([0.06304666 0.06010404 0.04544394 ... 0.00088669 0.0015011  0.00201125],[0.00000000e+00 2.17507102e-01 4.35014205e-01 ... 1.10243475e+04
+ 1.10245650e+04 1.10247825e+04],10,250)
+Ssaved plot while removing partials : flute/partial-finding-00.png
+Ssaved plot while removing partials : flute/partial-finding-01.png
+Ssaved plot while removing partials : flute/partial-finding-02.png
+Ssaved plot while removing partials : flute/partial-finding-03.png
+Ssaved plot while removing partials : flute/partial-finding-04.png
+Ssaved plot while removing partials : flute/partial-finding-05.png
+Ssaved plot while removing partials : flute/partial-finding-06.png
+Ssaved plot while removing partials : flute/partial-finding-07.png
+Ssaved plot while removing partials : flute/partial-finding-08.png
+Ssaved plot while removing partials : flute/partial-finding-09.png
+RETURNING: findPartials() == {'freq': array([ 521.36452415, 1043.3815696 , 1564.74609375, 2086.328125  ,
+       2597.90482955, 3129.7096946 , 3640.63387784, 4173.52627841,
+       4695.54332386, 5216.90784801]), 'amp': array([12745.73610472,  1826.31563408,  2357.27441141,    89.16109276,
+         126.13799699,   298.55911061,    62.67079658,    78.04945751,
+          48.2733907 ,    38.14049256])}
+Calculated errors : [ 192.76749 8089.09    5662.9805  6124.56    4955.7007  4160.658  ]RETURNING : findHarmonicPartials() = {'f0': 521.3645241477273, 'fn': array([ 521.36452415, 1043.3815696 , 1564.74609375, 2086.328125  ,
+       2597.90482955, 3129.7096946 , 3640.63387784, 4173.52627841,
+       4695.54332386, 5216.90784801]), 'An': array([12745.73610472,  1826.31563408,  2357.27441141,    89.16109276,
+         126.13799699,   298.55911061,    62.67079658,    78.04945751,
+          48.2733907 ,    38.14049256])}
+CALLING : refineHarmonicPartials(521.3645241477273,[ 521.36452415 1043.3815696  1564.74609375 2086.328125   2597.90482955
+ 3129.7096946  3640.63387784 4173.52627841 4695.54332386 5216.90784801],[12745.73610472  1826.31563408  2357.27441141    89.16109276
+   126.13799699   298.55911061    62.67079658    78.04945751
+    48.2733907     38.14049256])
+RETURNING : refineHarmonicPartials() = ans
+Finished running inputs Namespace(inputFile='flute.mp3', outputDir='flute')
